@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <title>CCXP-2022</title>
+</head>
+
+<body>
+    <!-- ======= Cabeçalho ====== -->
+    <header>
+        <img src="logo1.png" alt="Logotipo DNC " id="imgLogo">
+    </header>
+
+    <!-- ======= Sessão  Start ====== -->
+    <section class="section1">
+        <div class="desc">
+            <h1 id="titulo">REVIVA O ÉPICO</h1>
+            <h2 id="dataEvento">DE 01 A 04 DE DEZEMBRO</h2>
+            <p id="conteudo">Você consegue sentir? É aquela sensação de
+                finalmente poder falar em voz alta "estamos em casa".
+                Sim, em dezembro de 2022, teremos a volta da CCXP física.
+                Mas não será qualquer CCPX, vai ser o maior de todos os tempos.
+                Prepare-se para visitar seus universos favoritos, explorar o Artistis
+                Valley, se emocionar nos auditórios e encontrar aventuras épicas a
+                cada passo pelos nossos corredores.
+            </p>
+        </div>
+
+        <!-- ======= Cronômetro ====== -->
+        <div id="inter">
+            <div id="countdown">
+                <p class="cd" id="data"></p>
+                <p class="cd" id="hour"></p>
+                <p class="cd" id="min"></p>
+                <p class="cd" id="sec"></p>
+            </div>           
+
+            <div>
+                <p id="aviso">PARA A MAIOR CCXP DE TODOS OS TEMPOS</p>
+            </div>
+            <div id="video">
+                <video width="100%" src="Arlequina.mp4" type="video/mp4" controls-none  muted loop autoplay
+                    ></video>
+
+            </div>
+        </div>
+    </section>
+    <!-- ======= Ingressos Start ====== -->
+    <section id="compre">
+        <div id="ingressos">
+            <div id="ing1">
+                <p id="texto">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
+            </div>
+            <div id="ing3">
+                <div id="ing2">
+                    <img src="quinta.png" class="card" id="quinta" alt="Ingresso de Quinta Feira"
+                    onmouseover="highlightCards('#quinta')" onclick="selectCard('#quinta')"
+                    onmouseout="highlightCards('#quinta')">
+
+                <img src="sexta.png" class="card" id="sexta" alt="Ingresso de Sexta Feira"
+                    onmouseover="highlightCards('#sexta')" onclick="selectCard('#sexta')" onmouseout="
+                    highlightCards('#sexta')">
+
+                <img src="sabado.png" class="card" id="sabado" alt="Ingresso de Sábado" onclick="desabilitado()"               
+                    >
+
+                <img src="domingo.png" class="card" id="domingo" alt="Ingresso de Domingo"
+                    onmouseover="highlightCards('#domingo') " onclick="selectCard('#domingo')" onmouseout="
+                    highlightCards('#domingo')">
+                </div>
+                
+                <!-- ======= Cards End====== -->
+                <div>
+                    
+                    <button id="comprar" onclick="showSelectedCards()">GARANTA O SEU</button>
+                </div>
+            </div>
+
+    </section>
+
+    <footer>
+        <form action="https://github.com/Lucasgarciaamorim">
+            <input type="email" autocomplete="off" name="*" placeholder="Seu Email" required id="selectEmail">
+
+            <!-- <input type="submit" name="" autocomplete="off" id="btn-enviar"> -->
+        </form>
+        <button id="enviar">Enviar</button>
+
+        <p>Copyright &copy;<a target="_blank" href="https://github.com/Lucasgarciaamorim"> 2023 Lucas Garcia</a> </p>
+
+    </footer>
+
+
+</body>
+
+</html>
